@@ -1,0 +1,12 @@
+﻿@{
+    var RouteUrl = ViewContext.RouteData.Values["Page"].ToString();
+    if (RouteUrl=="/Index")
+    {
+        Layout = "_CustomLayout";
+    }
+    else
+    {
+        Layout = "_Layout";
+    }
+
+}
